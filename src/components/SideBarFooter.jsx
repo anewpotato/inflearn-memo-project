@@ -1,3 +1,3 @@
 export default function SideBarFooter() {
-  return <div cleassName="SideBarFooter">SideBarFooter</div>;
+  return <div className="SideBarFooter">SideBarFooter</div>;
 }

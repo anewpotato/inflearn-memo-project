@@ -1,3 +1,3 @@
 export default function SideBarHeader() {
-  return <div cleassName="SideBarHeader">SideBarHeader</div>;
+  return <div className="SideBarHeader">SideBarHeader</div>;
 }
