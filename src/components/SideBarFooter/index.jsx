@@ -1,3 +1,5 @@
+import './index.css';
+
 export default function SideBarFooter({ onClick }) {
   return (
     <div className="SideBarFooter">

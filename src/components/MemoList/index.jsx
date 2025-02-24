@@ -1,9 +1,11 @@
-import MemoItem from './MemoItem';
+import MemoItem from '../MemoItem';
+import './index.css';
 
 export default function MemoList({
   memos,
   setSelectedMemoIndex,
   selectedMemoIndex,
+  deleteMemo,
 }) {
   return (
     <div>
@@ -12,6 +14,11 @@ export default function MemoList({
           key={index}
           onClick={() => {
             setSelectedMemoIndex(index);
+          }}
+          onClickDelete={(e) => {
+            deleteMemo(index);
+            e.preventDefault();
+            e.stopPropagation();
           }}
           isSelected={index === selectedMemoIndex}
         >
