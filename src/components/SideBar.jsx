@@ -4,6 +4,7 @@ import SideBarHeader from './SideBarHeader';
 
 export default function SideBar({
   memos,
+  addMemo,
   setSelectedMemoIndex,
   selectedMemoIndex,
 }) {
@@ -15,7 +16,7 @@ export default function SideBar({
         setSelectedMemoIndex={setSelectedMemoIndex}
         selectedMemoIndex={selectedMemoIndex}
       />
-      <SideBarFooter />
+      <SideBarFooter onClick={addMemo} />
     </div>
   );
 }
